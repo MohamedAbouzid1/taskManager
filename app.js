@@ -4,7 +4,7 @@ const connectDB = require('./db/connect')
 const errorHandlerMiddleware = require('./middleware/error-handler')
 
 const notFound = require('./middleware/not-found')
-const port = 5000
+const port = process.env.PORT || 5000
 const tasks = require('./routes/tasks')
 
 require('dotenv').config()
